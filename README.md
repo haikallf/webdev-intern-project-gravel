@@ -1,70 +1,28 @@
-# Getting Started with Create React App
+# Take Home Assignment for Web Developer Internship - PT. Gravel Teknologi Indonesia
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This web application was meant to fulfill internship selection assignment by PT. Gravel Teknologi Indonesia built by Haikal Lazuardi Fadil. This web was built using ReactJS that displays a list of pokemons and allows users to view their details. This web was built by the help from [PokeAPI](https://pokeapi.co/docs/v2).
 
-## Available Scripts
+## How to run
 
-In the project directory, you can run:
+### `npm install`
+
+This command will install all the dependencies needed for the web to be run in local. The dependencies can be viewed in `package.json` file
 
 ### `npm start`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Features
 
-### `npm test`
+1. Pagination - This web allows you to easily navigate through thousands of pokemon species. The home page presents a comprehensive list of all available Pokemons, complete with their respective names and images.
+2. Detail - By clicking on a specific Pokemon, you will be taken to the "Pokemon Detail" page where you can delve deeper into its type, abilities, and stats.
+3. Show More / Show Less - This web includes "Show More/Show Less" button, giving you the power to control the amount of information displayed on the screen. With a simple click, you can expand the content to reveal more details, or minimize it to save space. This feature offers a clean and convenient way to manage your viewing experience.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Screenshots
 
-### `npm run build`
+Screenshots from this web app can be accessed in `<project directory>/screenshots` folder.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Live Demo
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+You can view the live demo by clicking [here](https://gravel-takehomeassignment-haikal.netlify.app).
