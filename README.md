@@ -6,7 +6,7 @@ This web application was meant to fulfill internship selection assignment by PT.
 
 ### `npm install`
 
-This command will install all the dependencies needed for the web to be run in local. The dependencies can be viewed in `package.json` file
+This command will install all the dependencies needed for the web to be run in local. The dependencies can be viewed in `package.json` file.
 
 ### `npm start`
 
