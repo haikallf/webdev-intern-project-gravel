@@ -1,6 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import "./Pagination.css";
+import { GrNext, GrPrevious } from "react-icons/gr";
 
 function Pagination({ page }) {
   const navigate = useNavigate();
@@ -17,8 +18,13 @@ function Pagination({ page }) {
 
   return (
     <div className="pagination">
-      <button onClick={() => handlePagination("prev")}>Prev</button>
-      <button onClick={() => handlePagination("next")}>Next</button>
+      <button onClick={() => handlePagination("prev")}>
+        <GrPrevious />
+      </button>
+      <p>{page}</p>
+      <button onClick={() => handlePagination("next")}>
+        <GrNext />
+      </button>
     </div>
   );
 }
