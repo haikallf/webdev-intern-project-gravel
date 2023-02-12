@@ -7,7 +7,7 @@ import "./PokemonDetails.css";
 import { capitalizeFirstLetter } from "../utils/functions";
 
 function PokemonDetails() {
-  let { pokemonId: id } = useParams();
+  const { pokemonId: id } = useParams();
   const url = imgurl + `${id}.png`;
 
   const [name, setName] = useState("");

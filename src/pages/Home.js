@@ -4,35 +4,48 @@ import { prefix } from "../utils/urls";
 import PokemonCard from "../components/PokemonCard";
 import "./Home.css";
 import { capitalizeFirstLetter } from "../utils/functions";
+import Pagination from "../components/Pagination";
+import { useNavigate, useParams } from "react-router-dom";
 
 function Home() {
+  let { page } = useParams();
+  const navigate = useNavigate();
+
   const [pokemons, setPokemons] = useState([]);
   useEffect(() => {
+    if (page < 1) {
+      navigate("/1");
+    }
     getAllPokemons();
-  }, []);
+  }, [page]);
 
   const getAllPokemons = async () => {
-    const response = await axios.get(prefix + "/pokemon");
+    const offset = (page < 1 ? 0 : page ? page - 1 : 0) * 20;
+    const response = await axios.get(
+      prefix + `/pokemon?offset=${offset}&limit=20`
+    );
     if (response.data) {
       setPokemons(response.data.results);
     }
   };
 
   const getPokemonIdByUrl = (urls) => {
-    let arr = urls.split("/");
+    const arr = urls.split("/");
     return arr[arr.length - 2];
   };
 
   return (
     <div className="pokemonCards__container">
       <div className="pokemonCards">
-        {pokemons?.map((pokemon) => (
+        {pokemons?.map((pokemon, idx) => (
           <PokemonCard
             name={capitalizeFirstLetter(pokemon?.name)}
             id={getPokemonIdByUrl(pokemon?.url)}
+            key={idx}
           />
         ))}
       </div>
+      <Pagination page={page} />
     </div>
   );
 }

@@ -5,7 +5,7 @@ import "./PokemonCard.css";
 
 function PokemonCard({ name, id }) {
   const url = imgurl + `${id}.png`;
-  let navigate = useNavigate();
+  const navigate = useNavigate();
 
   return (
     <div className="pokemonCard" onClick={() => navigate(`pokemon/${id}`)}>

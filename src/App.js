@@ -9,7 +9,7 @@ function App() {
     <div className="App">
       <Navbar />
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/:page?" element={<Home />} />
         <Route path="pokemon/:pokemonId" element={<PokemonDetails />} />
       </Routes>
     </div>
