@@ -21,7 +21,7 @@ function Pagination({ page }) {
       <button onClick={() => handlePagination("prev")}>
         <GrPrevious />
       </button>
-      <p>{page}</p>
+      <p>{page ? page : 1}</p>
       <button onClick={() => handlePagination("next")}>
         <GrNext />
       </button>

@@ -10,6 +10,7 @@ import { useNavigate, useParams } from "react-router-dom";
 function Home() {
   let { page } = useParams();
   const navigate = useNavigate();
+  const limit = 12;
 
   const [pokemons, setPokemons] = useState([]);
   useEffect(() => {
@@ -20,9 +21,9 @@ function Home() {
   }, [page]);
 
   const getAllPokemons = async () => {
-    const offset = (page < 1 ? 0 : page ? page - 1 : 0) * 20;
+    const offset = (page < 1 ? 0 : page ? page - 1 : 0) * limit;
     const response = await axios.get(
-      prefix + `/pokemon?offset=${offset}&limit=20`
+      prefix + `/pokemon?offset=${offset}&limit=${limit}`
     );
     if (response.data) {
       setPokemons(response.data.results);
