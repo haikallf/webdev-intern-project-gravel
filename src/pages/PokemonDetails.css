@@ -9,6 +9,7 @@
   align-items: center;
   justify-content: center;
 }
+
 .pokemonDetails {
   display: flex;
   justify-content: space-between;
@@ -17,11 +18,16 @@
 
 .pokemonDetails__img {
   height: 600px;
+  object-fit: contain;
 }
 
 .pokemonDetails__data {
   display: flex;
   padding-top: 100px;
+}
+
+.pokemonDetails__dataLeft > ul {
+  margin-bottom: 30px;
 }
 
 .pokemonDetails__dataLeft > ul,
@@ -38,4 +44,20 @@
   text-decoration: underline;
   font-size: 12px;
   cursor: pointer;
+  margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .pokemonDetails {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    align-items: center;
+    width: 80%;
+  }
+
+  .pokemonDetails__img {
+    height: 400px;
+    object-fit: contain;
+  }
 }

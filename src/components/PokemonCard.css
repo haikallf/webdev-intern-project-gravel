@@ -16,7 +16,7 @@
 }
 
 .pokemonCard__img {
-  width: 200px;
+  width: 100%;
   display: block;
   margin: auto;
 }
@@ -25,4 +25,14 @@
   position: absolute;
   bottom: 50px;
   padding-left: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+  .pokemonCard {
+    height: 200px;
+    width: 130px;
+  }
+  .pokemonCard__name {
+    bottom: 30px;
+  }
 }
